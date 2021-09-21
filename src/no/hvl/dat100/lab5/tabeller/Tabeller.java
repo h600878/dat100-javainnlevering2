@@ -24,12 +24,17 @@ public class Tabeller {
 
 	// c) Martin
 	public static int summer(int[] tabell) {
+		int sum = 0;
+		for (int i : tabell) {
+			sum += i;
+		}
+		// TODO, while
 
-		// TODO
-		throw new UnsupportedOperationException("summer ikke implementert");
+		// TODO, do while
+		return sum;
 	}
 
-	// d) Martin
+	// d)
 	public static boolean finnesTall(int[] tabell, int tall) {
 
 		// TODO
