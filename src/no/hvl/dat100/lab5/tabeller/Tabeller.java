@@ -1,31 +1,35 @@
 package no.hvl.dat100.lab5.tabeller;
 
 public class Tabeller {
-
-	// a)
+	// a) Martin
 	public static void skrivUt(int[] tabell) {
-
-		// TODO
-		throw new UnsupportedOperationException("skrivUt ikke implementert");
-
+		for (int i : tabell) {
+			System.out.print(i + ", ");
+		}
+		System.out.println();
 	}
 
-	// b)
+	// b) Martin
 	public static String tilStreng(int[] tabell) {
-
-		// TODO
-		throw new UnsupportedOperationException("tilStreng ikke implementert");
-		
+		String s = "[";
+		for (int i = 0; i < tabell.length; i++) {
+			s += tabell[i];
+			if (i < tabell.length-1) {
+				s += ",";
+			}
+		}
+		s += "]";
+		return s;
 	}
 
-	// c)
+	// c) Martin
 	public static int summer(int[] tabell) {
 
 		// TODO
 		throw new UnsupportedOperationException("summer ikke implementert");
 	}
 
-	// d)
+	// d) Martin
 	public static boolean finnesTall(int[] tabell, int tall) {
 
 		// TODO
