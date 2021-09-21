@@ -1,6 +1,9 @@
 package no.hvl.dat100.lab6.matriser;
 
 public class Matriser {
+	public static void main(String[] args) {
+
+	}
 
 	// a)
 	public static void skrivUt(int[][] matrise) {

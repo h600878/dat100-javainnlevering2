@@ -5,6 +5,9 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 class TabellerEnhetsTester {
+	public static void main(String[] args) {
+
+	}
 
 	private static int[] tabell1 = { 1, 4, 6 };
 	private static int[] tabell2 = { 1 };
