@@ -34,7 +34,7 @@ public class Tabeller {
 		return sum;
 	}
 
-	// d)
+	// d)  Erik
 	public static boolean finnesTall(int[] tabell, int tall) {
 
 		// TODO
