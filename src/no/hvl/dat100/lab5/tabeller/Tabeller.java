@@ -72,7 +72,7 @@ public class Tabeller {
 	}
 
 	public static void main(String[] args) {
-
+		//tester
 		int [] tabell ={1,2,3,4,5};
 		skrivUt(tabell);
 	}
