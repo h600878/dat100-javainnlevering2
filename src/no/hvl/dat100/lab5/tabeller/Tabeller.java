@@ -70,4 +70,11 @@ public class Tabeller {
 		// TODO
 		throw new UnsupportedOperationException("settSammen ikke implementert");
 	}
+
+	public static void main(String[] args) {
+
+		int [] tabell ={1,2,3,4,5};
+		skrivUt(tabell);
+	}
+
 }
