@@ -89,7 +89,7 @@ public class Tabeller {
 		//tester
 		int [] tabell ={1,2,3,4,5};
 	//	skrivUt(tabell);
-
+		              
 		int input = parseInt(showInputDialog("Finnes tall?"));
 		System.out.println(finnesTall(tabell, input));
 	}
