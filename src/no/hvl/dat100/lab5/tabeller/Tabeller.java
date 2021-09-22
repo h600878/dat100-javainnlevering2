@@ -1,5 +1,8 @@
 package no.hvl.dat100.lab5.tabeller;
 
+import static java.lang.Integer.parseInt;
+import static javax.swing.JOptionPane.showInputDialog;
+
 public class Tabeller {
 	// a) Martin
 	public static void skrivUt(int[] tabell) {
@@ -37,8 +40,19 @@ public class Tabeller {
 	// d)  Erik
 	public static boolean finnesTall(int[] tabell, int tall) {
 
-		// TODO
-		throw new UnsupportedOperationException("finnesTall ikke implementert");
+
+				boolean b = false;
+				int i = 0;
+
+				while (i<tabell.length) {
+
+					if (tabell[i]==tall) {
+						b = true;
+					}
+				}
+	    		i++;
+
+				return b ;
 	}
 
 	// e)
@@ -74,7 +88,10 @@ public class Tabeller {
 	public static void main(String[] args) {
 		//tester
 		int [] tabell ={1,2,3,4,5};
-		skrivUt(tabell);
+	//	skrivUt(tabell);
+
+		int input = parseInt(showInputDialog("Finnes tall?"));
+		System.out.println(finnesTall(tabell, input));
 	}
 
 }
