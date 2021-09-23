@@ -28,12 +28,22 @@ public class Tabeller {
 	// c) Martin
 	public static int summer(int[] tabell) {
 		int sum = 0;
+
+		// 1) for-løkke
+		for (int i = 0; i < tabell.length; i++) {
+			sum += tabell[i];
+		}/*
+		// 2) Utvidet for-løkke
 		for (int i : tabell) {
 			sum += i;
 		}
-		// TODO, while
 
-		// TODO, do while
+		// 3) while-løkke
+		int i = 0;
+		while (i < tabell.length) {
+			sum += tabell[i];
+			i++;
+		}*/
 		return sum;
 	}
 
