@@ -78,7 +78,7 @@ public class Tabeller {
 		throw new UnsupportedOperationException("erSortert ikke implementert");
 	}
 
-	// h)
+	// h) Sigve
 	public static int[] settSammen(int[] tabell1, int[] tabell2) {
 
 		int[]tabell3 = new int [tabell1.length + tabell2.length];
