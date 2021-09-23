@@ -83,32 +83,38 @@ public class Tabeller {
 
 		int[]tabell3 = new int [tabell1.length + tabell2.length];
 		
+		int pos = 0;
+		
 		for (int i = 0; i < tabell1.length; i++) {
 			
-			tabell3[i] = tabell1[i];
+			tabell3[pos] = tabell1[i];	
 			
-			for (int v = tabell1.length; v < tabell3.length; v++) {
-				
-				tabell3[v] = tabell2[i];
-				
-			}
+			pos++;
 			
 		}
 		
+		for (int v = 0; v < tabell2.length; v++) {
+			
+			tabell3[pos] = tabell2[v];
+			
+			pos++;
+		}
+		
 		return tabell3;
+
 	}
 
 	public static void main(String[] args) {
 		//tester
 		int [] tabell ={1,2,3,4,5};
-		int [] tabell2 = {6,7,8,9};
-	//	skrivUt(tabell);
+		int [] tabell2 = {6,7,8,9,10,19,26,2};
+		skrivUt(tabell);
 		              
-//		int input = parseInt(showInputDialog("Finnes tall?"));
-//		System.out.println(finnesTall(tabell, input));
+		int input = parseInt(showInputDialog("Finnes tall?"));
+		System.out.println(finnesTall(tabell, input));
 		
-		int[]tabell3 = settSammen(tabell, tabell2);
-		skrivUt(tabell3);
+//		int[]tabell3 = settSammen(tabell, tabell2); // Testutskrift settSammen
+//		skrivUt(tabell3);							//   -------- " ----------
 	}
 
 }
