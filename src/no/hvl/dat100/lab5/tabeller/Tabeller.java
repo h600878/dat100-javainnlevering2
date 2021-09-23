@@ -107,8 +107,9 @@ public class Tabeller {
 //		int input = parseInt(showInputDialog("Finnes tall?"));
 //		System.out.println(finnesTall(tabell, input));
 		
-		int[]tabell3 = settSammen(tabell, tabell2);
+		int[] tabell3 = settSammen(tabell, tabell2);
 		skrivUt(tabell3);
 	}
+	            
 
 }
