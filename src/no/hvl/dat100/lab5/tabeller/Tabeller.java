@@ -81,17 +81,34 @@ public class Tabeller {
 	// h)
 	public static int[] settSammen(int[] tabell1, int[] tabell2) {
 
-		// TODO
-		throw new UnsupportedOperationException("settSammen ikke implementert");
+		int[]tabell3 = new int [tabell1.length + tabell2.length];
+		
+		for (int i = 0; i < tabell1.length; i++) {
+			
+			tabell3[i] = tabell1[i];
+			
+			for (int v = tabell1.length; v < tabell3.length; v++) {
+				
+				tabell3[v] = tabell2[i];
+				
+			}
+			
+		}
+		
+		return tabell3;
 	}
 
 	public static void main(String[] args) {
 		//tester
 		int [] tabell ={1,2,3,4,5};
+		int [] tabell2 = {6,7,8,9};
 	//	skrivUt(tabell);
 		              
-		int input = parseInt(showInputDialog("Finnes tall?"));
-		System.out.println(finnesTall(tabell, input));
+//		int input = parseInt(showInputDialog("Finnes tall?"));
+//		System.out.println(finnesTall(tabell, input));
+		
+		int[]tabell3 = settSammen(tabell, tabell2);
+		skrivUt(tabell3);
 	}
 
 }
