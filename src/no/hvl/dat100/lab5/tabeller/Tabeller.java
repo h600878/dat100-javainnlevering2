@@ -47,22 +47,20 @@ public class Tabeller {
 		return sum;
 	}
 
-	// d)  Erik
+	// d)  Erik (Ferdig)
 	public static boolean finnesTall(int[] tabell, int tall) {
 
 
 				boolean b = false;
-				int i = 0;
 
-				while (i<tabell.length) {
+
+		for (int i = 0; i < tabell.length; i++){
 
 					if (tabell[i]==tall) {
-						b = true;
+						return true;
 					}
 				}
-	    		i++;
-
-				return b ;
+				return false ;
 	}
 
 	// e)
@@ -81,15 +79,16 @@ public class Tabeller {
 		
 	}
 
-	// g) Erik
+	// g) Erik (Ferdig)
 	public static boolean erSortert(int[] tabell) {
 
 
-			for (int i = 0; i < tabell.length - 1; i++) {
-				if (tabell[i] > tabell[i + 1])
-					return false;
+		for (int i = 0; i < tabell.length - 1; i++) {
+			if (tabell[i] > tabell[i + 1]) {
+				return false;
 			}
-			return true;
+		}
+		return true;
 	}
 
 
@@ -125,10 +124,10 @@ public class Tabeller {
 		int [] tabell2 = {6,7,8,9,10,19,26,2};
 //		skrivUt(tabell);
 
-		erSortert(tabell);
+		System.out.println(erSortert(tabell2));
 		              
-		//int input = parseInt(showInputDialog("Finnes tall?"));
-		//System.out.println(finnesTall(tabell, input));
+//		int input = parseInt(showInputDialog("Finnes tall?"));
+//		System.out.println(finnesTall(tabell, input));
 		
 //		int[]tabell3 = settSammen(tabell, tabell2); // Testutskrift settSammen
 //		skrivUt(tabell3);							//   -------- " ----------
