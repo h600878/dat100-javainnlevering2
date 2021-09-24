@@ -84,9 +84,14 @@ public class Tabeller {
 	// g)
 	public static boolean erSortert(int[] tabell) {
 
-		// TODO
-		throw new UnsupportedOperationException("erSortert ikke implementert");
+
+			for (int i = 0; i < tabell.length - 1; i++) {
+				if (tabell[i] > tabell[i + 1])
+					return false;
+			}
+			return true;
 	}
+
 
 	// h) Sigve
 	public static int[] settSammen(int[] tabell1, int[] tabell2) {
@@ -116,12 +121,14 @@ public class Tabeller {
 
 	public static void main(String[] args) {
 		//tester
-		int [] tabell ={1,2,3,4,5};
-		int [] tabell2 = {6,7,8,9,10,19,26,2};
-		skrivUt(tabell);
+//		int [] tabell ={1,2,3,4,5};
+//		int [] tabell2 = {6,7,8,9,10,19,26,2};
+//		skrivUt(tabell);
+
+		
 		              
-		int input = parseInt(showInputDialog("Finnes tall?"));
-		System.out.println(finnesTall(tabell, input));
+		//int input = parseInt(showInputDialog("Finnes tall?"));
+		//System.out.println(finnesTall(tabell, input));
 		
 //		int[]tabell3 = settSammen(tabell, tabell2); // Testutskrift settSammen
 //		skrivUt(tabell3);							//   -------- " ----------
