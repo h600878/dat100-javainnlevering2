@@ -81,7 +81,7 @@ public class Tabeller {
 		
 	}
 
-	// g)
+	// g) Erik
 	public static boolean erSortert(int[] tabell) {
 
 
@@ -121,11 +121,11 @@ public class Tabeller {
 
 	public static void main(String[] args) {
 		//tester
-//		int [] tabell ={1,2,3,4,5};
-//		int [] tabell2 = {6,7,8,9,10,19,26,2};
+		int [] tabell ={1,2,3,4,5};
+		int [] tabell2 = {6,7,8,9,10,19,26,2};
 //		skrivUt(tabell);
 
-		
+		erSortert(tabell);
 		              
 		//int input = parseInt(showInputDialog("Finnes tall?"));
 		//System.out.println(finnesTall(tabell, input));
