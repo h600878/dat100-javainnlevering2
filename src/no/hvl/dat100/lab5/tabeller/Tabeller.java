@@ -4,7 +4,7 @@ import static java.lang.Integer.parseInt;
 import static javax.swing.JOptionPane.showInputDialog;
 
 public class Tabeller {
-	// a) Martin
+	// a) Martin (Ferdig)
 	public static void skrivUt(int[] tabell) {
 		for (int i : tabell) {
 			System.out.print(i + ", ");
@@ -12,7 +12,7 @@ public class Tabeller {
 		System.out.println();
 	}
 
-	// b) Martin
+	// b) Martin (Ferdig)
 	public static String tilStreng(int[] tabell) {
 		String s = "[";
 		for (int i = 0; i < tabell.length; i++) {
@@ -25,7 +25,7 @@ public class Tabeller {
 		return s;
 	}
 
-	// c) Martin
+	// c) Martin (Ferdig)
 	public static int summer(int[] tabell) {
 		int sum = 0;
 
@@ -63,12 +63,21 @@ public class Tabeller {
 				return false ;
 	}
 
-	// e)
+	// e) Martin (Ferdig)
 	public static int posisjonTall(int[] tabell, int tall) {
+		boolean funnet = false;
+		int r;
 
-		// TODO
-		throw new UnsupportedOperationException("posisjonTall ikke implementert");
-
+		for (r = 0; r < tabell.length; r++) {
+			if (tabell[r] == tall) {
+				funnet = true;
+				break;
+			}
+		}
+		if (!funnet) {
+			r = -1;
+		}
+		return r;
 	}
 
 	// f) 
@@ -123,6 +132,7 @@ public class Tabeller {
 		int [] tabell ={1,2,3,4,5};
 		int [] tabell2 = {6,7,8,9,10,19,26,2};
 //		skrivUt(tabell);
+		//System.out.println(posisjonTall(tabell, 5));
 
 		System.out.println(erSortert(tabell2));
 		              
