@@ -80,7 +80,7 @@ public class Tabeller {
 		return r;
 	}
 
-	// f) 
+	// f)
 	public static int[] reverser(int[] tabell) {
 
 		// TODO
@@ -131,15 +131,21 @@ public class Tabeller {
 		//tester
 		int [] tabell ={1,2,3,4,5};
 		int [] tabell2 = {6,7,8,9,10,19,26,2};
-//		skrivUt(tabell);
-		//System.out.println(posisjonTall(tabell, 5));
 
-		System.out.println(erSortert(tabell2));
+
+		//Tester
+
+//a		skrivUt(tabell);
+
 		              
-//		int input = parseInt(showInputDialog("Finnes tall?"));
+//d		int input = parseInt(showInputDialog("Finnes tall?"));
 //		System.out.println(finnesTall(tabell, input));
-		
-//		int[]tabell3 = settSammen(tabell, tabell2); // Testutskrift settSammen
+
+//e		System.out.println(posisjonTall(tabell, 5));
+
+//g		System.out.println(erSortert(tabell2));
+
+//h		int[]tabell3 = settSammen(tabell, tabell2); // Testutskrift settSammen
 //		skrivUt(tabell3);							//   -------- " ----------
 	}
 
