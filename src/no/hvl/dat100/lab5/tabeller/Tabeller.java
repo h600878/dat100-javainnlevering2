@@ -80,12 +80,16 @@ public class Tabeller {
 		return r;
 	}
 
-	// f) 
+	// f) Sigve
 	public static int[] reverser(int[] tabell) {
 
-		// TODO
-		throw new UnsupportedOperationException("reverser ikke implementert");
-		
+		int verdi = 0;
+		for (int i : tabell) {
+			verdi = tabell[i];
+			tabell[tabell.length-1-i] = tabell[i];
+			tabell[tabell.length-1-i] = verdi;
+		}
+		return tabell;
 	}
 
 	// g) Erik (Ferdig)
@@ -140,7 +144,9 @@ public class Tabeller {
 //		System.out.println(finnesTall(tabell, input));
 		
 //		int[]tabell3 = settSammen(tabell, tabell2); // Testutskrift settSammen
-//		skrivUt(tabell3);							//   -------- " ----------
+//		skrivUt(tabell3);	 
+		
+		System.out.println(reverser(tabell));
 	}
 
 }
