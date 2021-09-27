@@ -10,11 +10,15 @@ public class Matriser {
 		skrivUt(skaler(2, tabell));
 	}
 
-	// a)
+	// a) Sigve (ferdig)
 	public static void skrivUt(int[][] matrise) {
 		
-		// TODO
-		throw new UnsupportedOperationException("skrivUt ikke implementert");
+		for (int[] tab : matrise) {
+			for (int tall : tab) {
+				System.out.printf("%-3s", tall);
+			}
+			System.out.println();
+		}
 	}
 
 	// b)
