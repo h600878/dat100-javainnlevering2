@@ -2,16 +2,27 @@ package no.hvl.dat100.lab6.matriser;
 
 public class Matriser {
 	public static void main(String[] args) {
-		int[][] tabell = {
+		int[][] tabell1 = {
 				{1, 3, 5},
 				{6, 3, 1},
 				{9, 2, 3},
 		};
-		skrivUt(skaler(2, tabell));
+		int[][] tabell2 = {
+				{2, 1, 5},
+				{3, 2, 3},
+				{5, 3, 1}
+		};
+		skrivUt(skaler(2, tabell1));
 		
 		System.out.println();
 		
+<<<<<<< HEAD
 		System.out.println(tilStreng(skaler(2, tabell)));
+=======
+		System.out.println(tilStreng(tabell1));
+
+		System.out.println("f) = " + multipliser(tabell1, tabell2));
+>>>>>>> branch 'master' of https://github.com/h600878/dat100-javainnlevering2
 	}
 
 	// a) Sigve (ferdig)
@@ -40,7 +51,7 @@ public class Matriser {
 		return streng;
 	}
 
-	// c) Martin, (Test)
+	// c) Martin (Ferdig)
 	public static int[][] skaler(int tall, int[][] matrise) {
 		int[][] nyMatrise = new int[matrise[matrise.length-1].length][matrise.length];
 
@@ -67,11 +78,15 @@ public class Matriser {
 	
 	}
 
-	// f)
+	// f) Martin (test)
 	public static int[][] multipliser(int[][] a, int[][] b) {
+		int[][] nyTab = new int[a[a.length-1].length][a.length];
 
-		// TODO
-		throw new UnsupportedOperationException("multipliser ikke implementert");
-	
+		for (int r = 0; r < nyTab.length; r++) {
+			for (int k = 0; k < nyTab[k].length; k++) {
+				nyTab[r][k] = a[r][k] * b[r][k];
+			}
+		}
+		return nyTab;
 	}
 }
