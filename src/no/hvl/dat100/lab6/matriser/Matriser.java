@@ -11,7 +11,7 @@ public class Matriser {
 		
 		System.out.println();
 		
-		System.out.println(tilStreng(tabell));
+		System.out.println(tilStreng(skaler(2, tabell)));
 	}
 
 	// a) Sigve (ferdig)
