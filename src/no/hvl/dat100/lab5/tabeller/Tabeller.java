@@ -148,8 +148,8 @@ public class Tabeller {
 //		int[]tabell3 = settSammen(tabell, tabell2); // Testutskrift settSammen
 //		skrivUt(tabell3);	 
 		
-//		int[]nyTabell = reverser(tabell);		//Test Reverser
-//		skrivUt(nyTabell);
+		int[]nyTabell = reverser(tabell);		//Test Reverser
+		skrivUt(nyTabell);
 	}
 
 }
