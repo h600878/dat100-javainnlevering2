@@ -16,13 +16,13 @@ public class Matriser {
 		
 		System.out.println();
 		
-<<<<<<< HEAD
-		System.out.println(tilStreng(skaler(2, tabell)));
-=======
+
+		System.out.println(tilStreng(skaler(2, tabell1)));
+
 		System.out.println(tilStreng(tabell1));
 
 		System.out.println("f) = " + multipliser(tabell1, tabell2));
->>>>>>> branch 'master' of https://github.com/h600878/dat100-javainnlevering2
+
 	}
 
 	// a) Sigve (ferdig)
