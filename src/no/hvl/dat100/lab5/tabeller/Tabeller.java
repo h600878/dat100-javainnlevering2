@@ -80,16 +80,18 @@ public class Tabeller {
 		return r;
 	}
 
-	// f) Sigve
+	// f) Sigve (ferdig)
 	public static int[] reverser(int[] tabell) {
 
-		int verdi = 0;
-		for (int i : tabell) {
-			verdi = tabell[i];
-			tabell[tabell.length-1-i] = tabell[i];
-			tabell[tabell.length-1-i] = verdi;
+		int[]nyTabell = new int [tabell.length];
+		
+		int pos = nyTabell.length-1;
+		for (int i = 0; i<tabell.length; i++) {
+			nyTabell[pos] = tabell[i];
+			pos--;
 		}
-		return tabell;
+		
+		return nyTabell;
 	}
 
 	// g) Erik (Ferdig)
@@ -105,7 +107,7 @@ public class Tabeller {
 	}
 
 
-	// h) Sigve
+	// h) Sigve (ferdig)
 	public static int[] settSammen(int[] tabell1, int[] tabell2) {
 
 		int[]tabell3 = new int [tabell1.length + tabell2.length];
@@ -146,7 +148,8 @@ public class Tabeller {
 //		int[]tabell3 = settSammen(tabell, tabell2); // Testutskrift settSammen
 //		skrivUt(tabell3);	 
 		
-		System.out.println(reverser(tabell));
+//		int[]nyTabell = reverser(tabell);		//Test Reverser
+//		skrivUt(nyTabell);
 	}
 
 }
