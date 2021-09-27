@@ -3,8 +3,11 @@ package no.hvl.dat100.lab5.tabeller;
 public class Tabeller {
 	// a) Martin (Ferdig)
 	public static void skrivUt(int[] tabell) {
-		for (int i : tabell) {
-			System.out.print(i + ", ");
+		for (int i = 0; i < tabell.length; i++) {
+			System.out.print(tabell[i]);
+			if (i < tabell.length-1) {
+				System.out.print(", ");
+			}
 		}
 		System.out.println();
 	}
