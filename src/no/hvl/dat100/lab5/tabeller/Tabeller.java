@@ -1,8 +1,5 @@
 package no.hvl.dat100.lab5.tabeller;
 
-import static java.lang.Integer.parseInt;
-import static javax.swing.JOptionPane.showInputDialog;
-
 public class Tabeller {
 	// a) Martin (Ferdig)
 	public static void skrivUt(int[] tabell) {
@@ -133,6 +130,7 @@ public class Tabeller {
 
 	}
 
+
 	public static void main(String[] args) {
 		//tester
 		int [] tabell ={1,2,3,4,5};
@@ -152,5 +150,5 @@ public class Tabeller {
 //		int[]nyTabell = reverser(tabell);		//Test Reverser
 //		skrivUt(nyTabell);
 	}
-
+	
 }
