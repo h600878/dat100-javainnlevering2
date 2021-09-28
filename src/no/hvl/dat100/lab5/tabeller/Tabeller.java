@@ -50,10 +50,6 @@ public class Tabeller {
 	// d)  Erik (Ferdig)
 	public static boolean finnesTall(int[] tabell, int tall) {
 
-
-				boolean b = false;
-
-
 		for (int i = 0; i < tabell.length; i++){
 
 					if (tabell[i]==tall) {
@@ -134,24 +130,6 @@ public class Tabeller {
 	}
 
 
-	public static void main(String[] args) {
-		//tester
-		int [] tabell ={1,2,3,4,5};
-		int [] tabell2 = {6,7,8,9,10,19,26,2};
-//		skrivUt(tabell);
-		//System.out.println(posisjonTall(tabell, 5));
 
-		System.out.println(erSortert(tabell2));
-		              
-//		int input = parseInt(showInputDialog("Finnes tall?"));
-//		System.out.println(finnesTall(tabell, input));
-		
-//		int[]tabell3 = settSammen(tabell, tabell2); // Testutskrift settSammen
-//		skrivUt(tabell3);	 
-		
-//		skrivUt(tabell);
-//		int[]nyTabell = reverser(tabell);		//Test Reverser
-//		skrivUt(nyTabell);
-	}
 	
 }
