@@ -52,11 +52,15 @@ public class Matriser {
 	
 	}
 
-	// f)
+	// f) Martin
 	public static int[][] multipliser(int[][] a, int[][] b) {
+		int[][] nyTab = new int[a[a.length-1].length][a.length];
 
-		// TODO
-		throw new UnsupportedOperationException("multipliser ikke implementert");
-	
+		for (int r = 0; r < nyTab.length; r++) {
+			for (int k = 0; k < nyTab[k].length; k++) {
+				nyTab[r][k] = a[r][k] * b[r][k];
+			}
+		}
+		return nyTab;
 	}
 }
