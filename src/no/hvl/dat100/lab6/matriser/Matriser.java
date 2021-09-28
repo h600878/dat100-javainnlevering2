@@ -61,7 +61,7 @@ public class Matriser {
 		return nyMatrise;
 	}
 
-	// d) Erik
+	// d) Erik (Ferdig)
 	public static boolean erLik(int[][] a, int[][] b) {
 
 
