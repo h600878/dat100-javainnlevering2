@@ -64,8 +64,14 @@ public class Matriser {
 		// Nøstet for løkke (for inni for)
 
 
-		// TODO
-		throw new UnsupportedOperationException("erLik ikke implementert");
+		if (a == b) {
+
+			return true;
+		}
+		else {
+			return false;
+		}
+
 	}
 	
 	// e)
