@@ -48,7 +48,7 @@ public class Tabeller {
 	public static boolean finnesTall(int[] tabell, int tall) {
 
 
-				boolean b = false;
+
 
 
 		for (int i = 0; i < tabell.length; i++){
@@ -129,5 +129,6 @@ public class Tabeller {
 		return tabell3;
 
 	}
+
 
 }
