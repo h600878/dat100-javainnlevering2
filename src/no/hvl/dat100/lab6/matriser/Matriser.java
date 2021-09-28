@@ -8,21 +8,36 @@ public class Matriser {
 				{9, 2, 3},
 		};
 		skrivUt(skaler(2, tabell));
+		
+		System.out.println();
+		
+		System.out.println(tilStreng(tabell));
 	}
 
-	// a)
+	// a) Sigve (ferdig)
 	public static void skrivUt(int[][] matrise) {
 		
-		// TODO
-		throw new UnsupportedOperationException("skrivUt ikke implementert");
+		for (int[] tab : matrise) {
+			for (int tall : tab) {
+				System.out.printf("%-3s", tall);
+			}
+			System.out.println();
+		}
 	}
 
-	// b)
+	// b) Sigve (ferdig)
 	public static String tilStreng(int[][] matrise) {
 
-		// TODO
-		throw new UnsupportedOperationException("tilStreng ikke implementert");
+		String streng = "";
+		for (int[]tab : matrise) {
+			for (int i : tab) {
+				
+				streng += i + " ";
+			}
+			streng += "\n";
+		}
 		
+		return streng;
 	}
 
 	// c) Martin, (Test)
