@@ -1,5 +1,7 @@
 package no.hvl.dat100.lab6.matriser;
 
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
 public class Matriser {
 	public static void main(String[] args) {
 		int[][] tabell1 = {
@@ -18,7 +20,7 @@ public class Matriser {
 		
 		System.out.println(tilStreng(tabell1));
 
-		System.out.println("f) = " + multipliser(tabell1, tabell2));
+		skrivUt(multipliser(tabell1, tabell2));
 	}
 
 	// a) Sigve (ferdig)
@@ -82,15 +84,15 @@ public class Matriser {
 	
 	}
 
-	// f) Martin (test)
+	// f) Martin (Test)
 	public static int[][] multipliser(int[][] a, int[][] b) {
-		int[][] nyTab = new int[a[a.length-1].length][a.length];
+		int[][] c = new int[a.length][a[0].length];
 
-		for (int r = 0; r < nyTab.length; r++) {
-			for (int k = 0; k < nyTab[k].length; k++) {
-				nyTab[r][k] = a[r][k] * b[r][k];
+		for (int r = 0; r < c.length; r++) {
+			for (int k = 0; k < c[r].length; k++) {
+				c[r][k] = a[r][k] * b[r][k];
 			}
 		}
-		return nyTab;
+		return c;
 	}
 }
