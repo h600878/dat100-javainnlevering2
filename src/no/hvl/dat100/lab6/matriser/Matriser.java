@@ -12,6 +12,17 @@ public class Matriser {
 				{3, 2, 3},
 				{5, 3, 1}
 		};
+		
+		int[][]matrise = {
+				{0,0,1,1,1,1,0,0},
+				{0,1,0,0,0,0,1,0},
+				{0,1,0,0,0,0,1,0},
+				{0,0,1,1,1,1,0,0},
+				{0,1,0,0,0,0,1,0},
+				{0,1,0,0,0,0,1,0},
+				{0,1,0,0,0,0,1,0},
+				{0,0,1,1,1,1,0,0},
+		};
 		skrivUt(skaler(2, tabell1));
 		
 		System.out.println();
@@ -21,6 +32,10 @@ public class Matriser {
 		System.out.println();
 
 		skrivUt(multipliser(tabell1, tabell2));
+		
+		System.out.println();
+		
+		skrivUt(speile(matrise));
 
 	}
 
@@ -71,11 +86,17 @@ public class Matriser {
 		throw new UnsupportedOperationException("erLik ikke implementert");
 	}
 	
-	// e)
+	// e) Martin & Sigve (ferdig)
 	public static int[][] speile(int[][] matrise) {
 
-		// TODO
-		throw new UnsupportedOperationException("speile ikke implementert");
+		int[][]speilet = new int[matrise.length][matrise[0].length];
+		for (int i = 0; i <matrise.length; i++) {
+			for (int j = 0; j < matrise[0].length; j++) {
+				speilet[i][j] = matrise[j][i];
+			}
+		}
+		
+		return speilet;
 	
 	}
 
