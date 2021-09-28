@@ -2,30 +2,54 @@ package no.hvl.dat100.lab6.matriser;
 
 public class Matriser {
 	public static void main(String[] args) {
-
+		int[][] tabell = {
+				{1, 3, 5},
+				{6, 3, 1},
+				{9, 2, 3},
+		};
+		skrivUt(skaler(2, tabell));
+		
+		System.out.println();
+		
+		System.out.println(tilStreng(tabell));
 	}
 
-	// a)
+	// a) Sigve (ferdig)
 	public static void skrivUt(int[][] matrise) {
 		
-		// TODO
-		throw new UnsupportedOperationException("skrivUt ikke implementert");
+		for (int[] tab : matrise) {
+			for (int tall : tab) {
+				System.out.printf("%-3s", tall);
+			}
+			System.out.println();
+		}
 	}
 
-	// b)
+	// b) Sigve (ferdig)
 	public static String tilStreng(int[][] matrise) {
 
-		// TODO
-		throw new UnsupportedOperationException("tilStreng ikke implementert");
+		String streng = "";
+		for (int[]tab : matrise) {
+			for (int i : tab) {
+				
+				streng += i + " ";
+			}
+			streng += "\n";
+		}
 		
+		return streng;
 	}
 
-	// c)
+	// c) Martin, (Test)
 	public static int[][] skaler(int tall, int[][] matrise) {
-		
-		// TODO
-		throw new UnsupportedOperationException("skaler ikke implementert");
-	
+		int[][] nyMatrise = new int[matrise[matrise.length-1].length][matrise.length];
+
+		for (int r = 0; r < matrise.length; r++) {
+			for (int k = 0; k < matrise[r].length; k++) {
+				nyMatrise[r][k] = matrise[r][k] * tall;
+			}
+		}
+		return nyMatrise;
 	}
 
 	// d)
@@ -43,11 +67,15 @@ public class Matriser {
 	
 	}
 
-	// f)
+	// f) Martin
 	public static int[][] multipliser(int[][] a, int[][] b) {
+		int[][] nyTab = new int[a[a.length-1].length][a.length];
 
-		// TODO
-		throw new UnsupportedOperationException("multipliser ikke implementert");
-	
+		for (int r = 0; r < nyTab.length; r++) {
+			for (int k = 0; k < nyTab[k].length; k++) {
+				nyTab[r][k] = a[r][k] * b[r][k];
+			}
+		}
+		return nyTab;
 	}
 }
