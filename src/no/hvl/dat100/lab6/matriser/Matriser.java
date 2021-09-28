@@ -63,7 +63,6 @@ public class Matriser {
 
 	// d) Erik
 	public static boolean erLik(int[][] a, int[][] b) {
-		// Nøstet for løkke (for inni for)
 
 
 		if (a == b) {
