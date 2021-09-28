@@ -2,7 +2,12 @@ package no.hvl.dat100.lab6.matriser;
 
 public class Matriser {
 	public static void main(String[] args) {
-
+		int[][] tabell = {
+				{1, 3, 5},
+				{6, 3, 1},
+				{9, 2, 3},
+		};
+		skrivUt(skaler(2, tabell));
 	}
 
 	// a)
@@ -20,12 +25,16 @@ public class Matriser {
 		
 	}
 
-	// c)
+	// c) Martin, (Test)
 	public static int[][] skaler(int tall, int[][] matrise) {
-		
-		// TODO
-		throw new UnsupportedOperationException("skaler ikke implementert");
-	
+		int[][] nyMatrise = new int[matrise[matrise.length-1].length][matrise.length];
+
+		for (int r = 0; r < matrise.length; r++) {
+			for (int k = 0; k < matrise[r].length; k++) {
+				nyMatrise[r][k] = matrise[r][k] * tall;
+			}
+		}
+		return nyMatrise;
 	}
 
 	// d)
