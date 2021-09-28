@@ -52,8 +52,10 @@ public class Matriser {
 		return nyMatrise;
 	}
 
-	// d)
+	// d) Erik
 	public static boolean erLik(int[][] a, int[][] b) {
+		// Nøstet for løkke (for inni for)
+		
 
 		// TODO
 		throw new UnsupportedOperationException("erLik ikke implementert");
