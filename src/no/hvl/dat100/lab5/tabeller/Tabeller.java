@@ -1,8 +1,5 @@
 package no.hvl.dat100.lab5.tabeller;
 
-import static java.lang.Integer.parseInt;
-import static javax.swing.JOptionPane.showInputDialog;
-
 public class Tabeller {
 	// a) Martin (Ferdig)
 	public static void skrivUt(int[] tabell) {
@@ -80,12 +77,18 @@ public class Tabeller {
 		return r;
 	}
 
-	// f)
+	// f) Sigve (ferdig)
 	public static int[] reverser(int[] tabell) {
 
-		// TODO
-		throw new UnsupportedOperationException("reverser ikke implementert");
+		int[]nyTabell = new int [tabell.length];
 		
+		int pos = nyTabell.length-1;
+		for (int i = 0; i<tabell.length; i++) {
+			nyTabell[pos] = tabell[i];
+			pos--;
+		}
+		
+		return nyTabell;
 	}
 
 	// g) Erik (Ferdig)
@@ -101,7 +104,7 @@ public class Tabeller {
 	}
 
 
-	// h) Sigve
+	// h) Sigve (ferdig)
 	public static int[] settSammen(int[] tabell1, int[] tabell2) {
 
 		int[]tabell3 = new int [tabell1.length + tabell2.length];
@@ -125,28 +128,6 @@ public class Tabeller {
 		
 		return tabell3;
 
-	}
-
-	public static void main(String[] args) {
-		//tester
-		int [] tabell ={1,2,3,4,5};
-		int [] tabell2 = {6,7,8,9,10,19,26,2};
-
-
-		//Tester
-
-//a		skrivUt(tabell);
-
-		              
-//d		int input = parseInt(showInputDialog("Finnes tall?"));
-//		System.out.println(finnesTall(tabell, input));
-
-//e		System.out.println(posisjonTall(tabell, 5));
-
-//g		System.out.println(erSortert(tabell2));
-
-//h		int[]tabell3 = settSammen(tabell, tabell2); // Testutskrift settSammen
-//		skrivUt(tabell3);							//   -------- " ----------
 	}
 
 }
