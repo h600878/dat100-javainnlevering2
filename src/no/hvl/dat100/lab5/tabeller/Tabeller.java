@@ -50,10 +50,6 @@ public class Tabeller {
 	// d)  Erik (Ferdig)
 	public static boolean finnesTall(int[] tabell, int tall) {
 
-
-				
-
-
 		for (int i = 0; i < tabell.length; i++){
 
 					if (tabell[i]==tall) {
