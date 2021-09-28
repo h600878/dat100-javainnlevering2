@@ -15,13 +15,12 @@ public class Matriser {
 		skrivUt(skaler(2, tabell1));
 		
 		System.out.println();
-		
-
-		System.out.println(tilStreng(skaler(2, tabell1)));
 
 		System.out.println(tilStreng(tabell1));
+		
+		System.out.println();
 
-		System.out.println("f) = " + multipliser(tabell1, tabell2));
+		skrivUt(multipliser(tabell1, tabell2));
 
 	}
 
@@ -80,12 +79,13 @@ public class Matriser {
 	
 	}
 
-	// f) Martin (test)
+	// f) Martin (ferdig)
 	public static int[][] multipliser(int[][] a, int[][] b) {
-		int[][] nyTab = new int[a[a.length-1].length][a.length];
+		
+		int[][] nyTab = new int[a.length][a[0].length];
 
 		for (int r = 0; r < nyTab.length; r++) {
-			for (int k = 0; k < nyTab[k].length; k++) {
+			for (int k = 0; k < nyTab[r].length; k++) {
 				nyTab[r][k] = a[r][k] * b[r][k];
 			}
 		}
