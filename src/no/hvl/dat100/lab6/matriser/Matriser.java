@@ -53,11 +53,11 @@ public class Matriser {
 				{7,8,9}
 		};
 		
-		boolean erlik = erLik(tab1, tab2);
+
 		
 		System.out.println();
 		
-		System.out.println(erlik);
+		System.out.println(erLik(tab1,tab2));
 
 	}
 
@@ -103,15 +103,20 @@ public class Matriser {
 	public static boolean erLik(int[][] a, int[][] b) {
 
 
-		if (a == b) {
-
-			return true;
+		for (int r = 0; r < a.length; r++) {
+			for (int k = 0; k < b.length; k++) {
+				if (a[r][k] != b[r][k]){
+					return false;
+				}
+			}
 		}
-		else {
-			return false;
-		}
-
+		return true;
 	}
+		
+		
+
+
+
 	
 	// e) Martin & Sigve (ferdig)
 	public static int[][] speile(int[][] matrise) {
