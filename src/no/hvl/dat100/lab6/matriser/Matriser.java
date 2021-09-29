@@ -127,7 +127,10 @@ public class Matriser {
 	
 	}
 
-	// f) Martin TODO Alle tall i første rad skal ganges med første tall i hver rad på den andre matrisen. Så andre rad med andre tall i hver rad på den andre osv.
+	// f) Martin
+	// TODO Alle tall i første rad skal ganges med første tall i hver rad på den andre matrisen.
+	//  Så første rad med andre tall i hver rad på den andre osv.
+	//  Etter tredje gang start på neste rad også siste etter det. (a1*a1+a2*b1+a3*c1)
 	public static int[][] multipliser(int[][] a, int[][] b) {
 
 		int[][] c = new int[a.length][a[0].length];
