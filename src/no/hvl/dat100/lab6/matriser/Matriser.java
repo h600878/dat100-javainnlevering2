@@ -1,65 +1,6 @@
 package no.hvl.dat100.lab6.matriser;
 
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
-
 public class Matriser {
-	public static void main(String[] args) {
-		int[][] tabell1 = {
-				{1, 3, 5},
-				{6, 3, 1},
-				{9, 2, 3},
-		};
-		int[][] tabell2 = {
-				{2, 1, 5},
-				{3, 2, 3},
-				{5, 3, 1}
-		};
-		
-		int[][]matrise = {
-				{0,0,1,1,1,1,0,0},
-				{0,1,0,0,0,0,1,0},
-				{0,1,0,0,0,0,1,0},
-				{0,0,1,1,1,1,0,0},
-				{0,1,0,0,0,0,1,0},
-				{0,1,0,0,0,0,1,0},
-				{0,1,0,0,0,0,1,0},
-				{0,0,1,1,1,1,0,0},
-		};
-		skrivUt(skaler(2, tabell1));
-		
-		System.out.println();
-
-		System.out.println(tilStreng(tabell1));
-		
-		System.out.println();
-
-		skrivUt(multipliser(tabell1, tabell2));
-		
-		System.out.println();
-		
-		skrivUt(speile(matrise));
-
-		skrivUt(multipliser(tabell1, tabell2));
-		
-		int[][]tab1 = {
-				{1,2,3},
-				{4,5,6},
-				{7,8,9}
-		};
-		
-		int[][]tab2 = {
-				{1,2,3},
-				{4,5,6},
-				{7,8,9}
-		};
-		
-
-		
-		System.out.println();
-		
-		System.out.println(erLik(tabell1,tabell2));
-
-	}
 
 	// a) Sigve (ferdig)
 	public static void skrivUt(int[][] matrise) {
@@ -113,7 +54,7 @@ public class Matriser {
 		return true;
 	}
 	
-	// e) Martin & Sigve (ferdig)
+	// e) Martin & Sigve (Ferdig)
 	public static int[][] speile(int[][] matrise) {
 
 		int[][]speilet = new int[matrise.length][matrise[0].length];
@@ -127,17 +68,13 @@ public class Matriser {
 	
 	}
 
-	// f) Martin
-	// TODO Alle tall i første rad skal ganges med første tall i hver rad på den andre matrisen.
-	//  Så første rad med andre tall i hver rad på den andre osv.
-	//  Etter tredje gang start på neste rad også siste etter det. (a1*a1+a2*b1+a3*c1)
+	// f) Martin (Ferdig)
 	public static int[][] multipliser(int[][] a, int[][] b) {
-
 		int[][] c = new int[a.length][a[0].length];
 
 		for (int r = 0; r < c.length; r++) {
 			for (int k = 0; k < c[r].length; k++) {
-				c[r][k] = a[r][k] * b[r][k];
+				c[r][k] = a[r][0] * b[0][k] + a[r][1] * b[1][k] + a[r][2] * b[2][k];
 			}
 		}
 		return c;
