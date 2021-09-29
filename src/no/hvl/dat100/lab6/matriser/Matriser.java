@@ -112,11 +112,6 @@ public class Matriser {
 		}
 		return true;
 	}
-		
-		
-
-
-
 	
 	// e) Martin & Sigve (ferdig)
 	public static int[][] speile(int[][] matrise) {
@@ -132,8 +127,7 @@ public class Matriser {
 	
 	}
 
-
-	// f) Martin (ferdig)
+	// f) Martin TODO Alle tall i første rad skal ganges med første tall i hver rad på den andre matrisen. Så andre rad med andre tall i hver rad på den andre osv.
 	public static int[][] multipliser(int[][] a, int[][] b) {
 
 		int[][] c = new int[a.length][a[0].length];
