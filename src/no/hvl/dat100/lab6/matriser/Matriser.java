@@ -1,5 +1,7 @@
 package no.hvl.dat100.lab6.matriser;
 
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
 public class Matriser {
 	public static void main(String[] args) {
 		int[][] tabell1 = {
@@ -36,6 +38,26 @@ public class Matriser {
 		System.out.println();
 		
 		skrivUt(speile(matrise));
+
+		skrivUt(multipliser(tabell1, tabell2));
+		
+		int[][]tab1 = {
+				{1,2,3},
+				{4,5,6},
+				{7,8,9}
+		};
+		
+		int[][]tab2 = {
+				{1,2,3},
+				{4,5,6},
+				{7,8,9}
+		};
+		
+		boolean erlik = erLik(tab1, tab2);
+		
+		System.out.println();
+		
+		System.out.println(erlik);
 
 	}
 
@@ -77,13 +99,18 @@ public class Matriser {
 		return nyMatrise;
 	}
 
-	// d) Erik
+	// d) Erik (Ferdig)
 	public static boolean erLik(int[][] a, int[][] b) {
-		// Nøstet for løkke (for inni for)
 
 
-		// TODO
-		throw new UnsupportedOperationException("erLik ikke implementert");
+		if (a == b) {
+
+			return true;
+		}
+		else {
+			return false;
+		}
+
 	}
 	
 	// e) Martin & Sigve (ferdig)
@@ -100,16 +127,28 @@ public class Matriser {
 	
 	}
 
+
 	// f) Martin (ferdig)
 	public static int[][] multipliser(int[][] a, int[][] b) {
+
 		
 		int[][] nyTab = new int[a.length][a[0].length];
+
+		int[][] c = new int[a.length][a[0].length];
+
+
 
 		for (int r = 0; r < nyTab.length; r++) {
 			for (int k = 0; k < nyTab[r].length; k++) {
 				nyTab[r][k] = a[r][k] * b[r][k];
 			}
+		}	
+
+		for (int r = 0; r < c.length; r++) {
+			for (int k = 0; k < c[r].length; k++) {
+				c[r][k] = a[r][k] * b[r][k];
+			}
 		}
-		return nyTab;
+		return c;
 	}
 }
