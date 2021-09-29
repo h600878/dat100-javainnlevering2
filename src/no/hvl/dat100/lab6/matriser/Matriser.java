@@ -131,18 +131,7 @@ public class Matriser {
 	// f) Martin (ferdig)
 	public static int[][] multipliser(int[][] a, int[][] b) {
 
-		
-		int[][] nyTab = new int[a.length][a[0].length];
-
 		int[][] c = new int[a.length][a[0].length];
-
-
-
-		for (int r = 0; r < nyTab.length; r++) {
-			for (int k = 0; k < nyTab[r].length; k++) {
-				nyTab[r][k] = a[r][k] * b[r][k];
-			}
-		}	
 
 		for (int r = 0; r < c.length; r++) {
 			for (int k = 0; k < c[r].length; k++) {
