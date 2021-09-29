@@ -57,7 +57,7 @@ public class Matriser {
 		
 		System.out.println();
 		
-		System.out.println(erLik(tab1,tab2));
+		System.out.println(erLik(tabell1,tabell2));
 
 	}
 
