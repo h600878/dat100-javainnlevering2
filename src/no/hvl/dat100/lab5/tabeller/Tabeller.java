@@ -61,19 +61,13 @@ public class Tabeller {
 
 	// e) Martin (Ferdig)
 	public static int posisjonTall(int[] tabell, int tall) {
-		boolean funnet = false;
-		int r;
 
-		for (r = 0; r < tabell.length; r++) {
+		for (int r = 0; r < tabell.length; r++) {
 			if (tabell[r] == tall) {
-				funnet = true;
-				break;
+				return r;
 			}
 		}
-		if (!funnet) {
-			r = -1;
-		}
-		return r;
+		return -1;
 	}
 
 	// f) Sigve (ferdig)
@@ -93,7 +87,6 @@ public class Tabeller {
 	// g) Erik (Ferdig)
 	public static boolean erSortert(int[] tabell) {
 
-
 		for (int i = 0; i < tabell.length - 1; i++) {
 			if (tabell[i] > tabell[i + 1]) {
 				return false;
@@ -101,7 +94,6 @@ public class Tabeller {
 		}
 		return true;
 	}
-
 
 	// h) Sigve (ferdig)
 	public static int[] settSammen(int[] tabell1, int[] tabell2) {
