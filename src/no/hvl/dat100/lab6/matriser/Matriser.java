@@ -30,7 +30,7 @@ public class Matriser {
 
 	// c) Martin (Ferdig)
 	public static int[][] skaler(int tall, int[][] matrise) {
-		int[][] nyMatrise = new int[matrise[matrise.length-1].length][matrise.length];
+		int[][] nyMatrise = new int[matrise[0].length][matrise.length];
 
 		for (int r = 0; r < matrise.length; r++) {
 			for (int k = 0; k < matrise[r].length; k++) {
@@ -58,6 +58,7 @@ public class Matriser {
 	public static int[][] speile(int[][] matrise) {
 
 		int[][]speilet = new int[matrise.length][matrise[0].length];
+
 		for (int i = 0; i <matrise.length; i++) {
 			for (int j = 0; j < matrise[0].length; j++) {
 				speilet[i][j] = matrise[j][i];
